@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | SkillHub</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="dashboard-page">
+
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="logo">Skill<span>Hub</span></h2>
+
+      <nav>
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="course-details.html">Courses</a>
+        <a href="index.html">Home Page</a>
+        <button class="logout" id="logoutBtn" type="submit">Logout</button>
+      </nav>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+      <!-- TOP BAR -->
+      
+      <div class="topbar">
+        <h2>Welcome back!</h2>
+        
+        <div class="topbar-right">
+          <div class="search">
+            <input type="text" placeholder="Search courses...">
+       </div>
+    
+    <!-- USER ICON -->
+    <i class="fa-solid fa-user user-icon"></i>
+  </div>
+ </div>
+
+      <!-- CONTENT -->
+      <div class="dashboard-content">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+
+          <section class="courses">
+            <h3>Available Courses</h3>
+            <p>Explore courses and continue learning new skills.</p>
+
+            <!-- COURSES LOAD HERE -->
+            <div class="course-grid" id="courseContainer"></div>
+          </section>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+
+          <h3>AI Learning Suggestions</h3>
+
+          <div class="suggestion-card">
+            <h4>Graphic Design Basics</h4>
+            <p>5 Lessons</p>
+            <button>Start</button>
+          </div>
+          
+          <div class="suggestion-card">
+            <h4>Frontend Web Development</h4>
+            <p>10 Lessons</p>
+            <button>Start</button>
+          </div>
+          
+          <div class="suggestion-card">
+            <h4>YouTube Automation</h4>
+            <p>7 Lessons</p>
+            <button>Start</button>
+          </div>
+
+          <div class="suggestion-card">
+            <h4>SEO Fundamentals</h4>
+            <p>7 Lessons</p>
+            <button>Start</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+
