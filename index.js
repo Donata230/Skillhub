@@ -1,4 +1,4 @@
-const logout= document.querySelector(".logout");
+const logoutBtn= document.querySelector("#logoutBtn");
 
 // ===============================
 // RUN AFTER PAGE LOAD
@@ -161,15 +161,14 @@ function protectDashboard() {
 async function loadCourses() {
   const container = document.getElementById("courseContainer"); // ✅ FIXED
 
-
+  try {
 const res = await fetch("https://fakestoreapi.com/products")
 const data = await res.json()
 console.log(data)
-  
 
-     /* container.innerHTML = "";
+     container.innerHTML = "";
       
-     /* data.forEach(course => {
+     data.forEach(course => {
         const card = document.createElement("div");
         card.classList.add("card");
         
@@ -182,26 +181,23 @@ console.log(data)
         
         container.appendChild(card);
       });
-      
-    })
-    .catch(() => {
+  } catch(err){
       container.innerHTML = "<p>Error loading courses</p>";
-    });*/
+}
 }
 
 //LOGOUT 
   
   
   
-  logout.addEventListener("click", (e) => {
+  logoutBtn.addEventListener("click", (e) => {
     e.preventDefault();
     
-    // remove token
-    /*localStorage.removeItem("token");
+  localStorage.removeItem("token");
     
     alert("Logged out successfully");
     
-    window.location.href = "login-form.html";*/
+    window.location.href = "login-form.html";
     console.log("logout")
   });
 
@@ -257,7 +253,4 @@ function goBack() {
   localStorage.removeItem("token");
   alert("Logged out successfully");
   window.location.href = "login.html";
-}
-
-/*Course-details*/
-
+}*/
