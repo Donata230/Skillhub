@@ -1026,3 +1026,164 @@ textarea::placeholder {
     height: auto;
   }
 }*/
+
+
+/* ===============================
+LOGIN RESPONSIVE
+=============================== */
+
+@media (max-width: 768px) {
+
+  .login-container {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .login-box {
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .login-container .side {
+    display: none; /* hide right text */
+  }
+
+  .bg-slide {
+    display: none; /* remove background effect */
+  }
+
+  .signup-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .signup-box {
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .signup-container .side-text {
+    display: none;
+  }
+
+  .bg-slide2 {
+    display: none;
+  }
+
+    .course-details-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .course-details-container img {
+    width: 100%;
+    height: auto;
+  }
+
+
+ #navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: none; /* hide for now (you can add hamburger later) */
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero-text h2,
+  #hero-text p {
+    text-align: center;
+  }
+
+  .hero-image img {
+    width: 250px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+    .feature-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+
+   .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-section h2,
+  .about-section p {
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 250px;
+    border-radius: 20px;
+  }
+
+
+}
+
+
+
+@media (max-width: 900px) {
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .main {
+    padding: 15px;
+  }
+
+  .dashboard-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+}
